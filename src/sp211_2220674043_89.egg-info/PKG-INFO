@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: sp211_2220674043_89
+Version: 0.1.0
+Summary: Shortest path calculation with fuel cost estimation
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: geopandas>=1.0.1
+Requires-Dist: pytest>=8.3.5
+
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/UJ8VLwsI)

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sp211_2220674043_89"
+version = "0.1.0"
+description = "Shortest path calculation with fuel cost estimation"
+readme = "README.md"
+license = {text = "MIT"}
+dependencies = [
+    "geopandas>=1.0.1",
+    "pytest>=8.3.5"
+]
+requires-python = ">=3.8"
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "sp211"
+]
+
+[tool.hatch.build]
+packages = ["sp211"]
