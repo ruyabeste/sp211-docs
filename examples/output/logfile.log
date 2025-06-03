@@ -1,0 +1,28 @@
+2025-06-02 21:33:27,525 - INFO - 7 nodes loaded from C:\Users\User\OneDrive\Masaüstü\python-packaging-ruyabeste\data\test\nodes.csv
+2025-06-02 21:38:42,972 - INFO - 7 nodes loaded from C:\Users\User\OneDrive\Masaüstü\python-packaging-ruyabeste\data\test\nodes.csv
+2025-06-02 21:38:42,972 - INFO - 13 edges loaded from C:\Users\User\OneDrive\Masaüstü\python-packaging-ruyabeste\data\test\edges.csv
+2025-06-02 21:38:43,954 - WARNING - Start or end node does not exist in the graph.
+2025-06-02 21:38:43,954 - WARNING - No path could be found between the given nodes.
+2025-06-02 21:42:19,472 - INFO - 7 nodes loaded from C:\Users\User\OneDrive\Masaüstü\python-packaging-ruyabeste\data\test\nodes.csv
+2025-06-02 21:42:19,472 - INFO - 13 edges loaded from C:\Users\User\OneDrive\Masaüstü\python-packaging-ruyabeste\data\test\edges.csv
+2025-06-02 21:42:20,250 - WARNING - Start or end node does not exist in the graph.
+2025-06-02 21:42:20,250 - WARNING - No path could be found between the given nodes.
+2025-06-02 21:42:42,312 - INFO - 7 nodes loaded from C:\Users\User\OneDrive\Masaüstü\python-packaging-ruyabeste\data\test\nodes.csv
+2025-06-02 21:42:42,314 - INFO - 13 edges loaded from C:\Users\User\OneDrive\Masaüstü\python-packaging-ruyabeste\data\test\edges.csv
+2025-06-02 21:42:42,899 - WARNING - Start or end node does not exist in the graph.
+2025-06-02 21:42:42,899 - WARNING - No path could be found between the given nodes.
+2025-06-02 21:43:43,725 - INFO - 7 nodes loaded from C:\Users\User\OneDrive\Masaüstü\python-packaging-ruyabeste\data\test\nodes.csv
+2025-06-02 21:43:43,732 - INFO - 13 edges loaded from C:\Users\User\OneDrive\Masaüstü\python-packaging-ruyabeste\data\test\edges.csv
+2025-06-02 21:43:44,372 - WARNING - No path could be found between the given nodes.
+2025-06-03 14:00:03,220 - INFO - Program started
+2025-06-03 14:00:03,397 - INFO - Graph data loaded successfully.
+2025-06-03 14:00:04,757 - INFO - Start: 265, End: 302
+2025-06-03 14:00:09,468 - INFO - Shortest path exported successfully.
+2025-06-03 14:07:59,720 - INFO - Program started
+2025-06-03 14:07:59,955 - INFO - Graph data loaded successfully.
+2025-06-03 14:08:00,854 - INFO - Start: 265, End: 302
+2025-06-03 14:08:05,134 - INFO - Shortest path exported successfully.
+2025-06-03 14:08:05,277 - INFO - Total distance calculated: 1179.33 km
+2025-06-03 14:08:05,277 - INFO - Fuel cost estimated: 3441.86 TL (distance: 1179.33 km)
+2025-06-03 14:08:05,277 - INFO - Total distance: 1179.33 km
+2025-06-03 14:08:05,277 - INFO - Estimated fuel cost: 3441.86 TL
