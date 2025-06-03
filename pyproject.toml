@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sp211_2220674043_89"
-version = "0.1.0"
+version = "0.1.1"
 description = "Shortest path calculation with fuel cost estimation"
 readme = "README.md"
 license = {text = "MIT"}
