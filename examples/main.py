@@ -52,8 +52,8 @@ gpkg_path = Path(__file__).parent / "output" / "shortest_path.gpkg"
 distance = new_feature.calculate_total_distance(gpkg_path)
 cost = new_feature.calculate_fuel_cost(distance)
 
-print(f"\n📍 Total Distance: {distance:.2f} km")
-print(f"⛽ Estimated Fuel Cost: {cost:.2f} TL")
+print(f"\n Total Distance: {distance:.2f} km")
+print(f"Estimated Fuel Cost: {cost:.2f} TL")
 
 logging.info(f"Total distance: {distance:.2f} km")
 logging.info(f"Estimated fuel cost: {cost:.2f} TL")
