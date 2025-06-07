@@ -86,6 +86,12 @@ Documentation was generated using Sphinx. An example screenshot is below:
 
 ---
 
+## 📦 Package Deployment
+The project was successfully packaged and published on TestPyPI. You can install it using the following command:
+- pip install -i https://test.pypi.org/simple/ sp211-2220674043-89
+
+---
+
 ##  AI Use Statement
 
 Throughout this project;
