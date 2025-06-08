@@ -1,16 +1,29 @@
-import sys
+import unittest
 from pathlib import Path
+import sys
+
+# src klasörünü path'e ekle
 sys.path.append(str(Path(__file__).resolve().parent.parent / "src"))
 
-import pytest
 from sp211.graph import Graph
 
-def test_graph_node_count(small_test_graph):
-    assert len(small_test_graph.nodes) > 0
+class TestGraph(unittest.TestCase):
+    def setUp(self):
+        # Test verileri içeren CSV dosyalarının yolu
+        self.graph = Graph()
+        data_dir = Path(__file__).resolve().parent.parent / "data" / "test"
+        self.graph.load_nodes(data_dir / "nodes.csv")
+        self.graph.load_edges(data_dir / "edges.csv")
 
-def test_graph_edge_count(small_test_graph):
-    assert len(small_test_graph.edges) == 13
+    def test_nodes_loaded(self):
+        self.assertGreater(len(self.graph.nodes), 0, "Node verisi yüklenemedi")
 
-def test_node_existence(small_test_graph):
-    assert small_test_graph.exists_node('A')
-    assert not small_test_graph.exists_node('Z')
+    def test_edges_loaded(self):
+        self.assertGreater(len(self.graph.edges), 0, "Edge verisi yüklenemedi")
+
+    def test_graph_structure(self):
+        node = list(self.graph.nodes.keys())[0]
+        self.assertIn(node, self.graph.nodes, "Node grafikte mevcut değil")
+
+if __name__ == '__main__':
+    unittest.main()

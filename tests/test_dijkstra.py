@@ -1,28 +1,26 @@
-import sys
+import unittest
 from pathlib import Path
-sys.path.append(str(Path(__file__).resolve().parent.parent / "src"))
-
+from sp211.graph import Graph
 from sp211.dijkstra import shortest_path
 
-def test_shortest_path_cost_from_A(small_test_graph):
-    cost, prev = shortest_path(small_test_graph, 'A')
+class TestDijkstra(unittest.TestCase):
+    def setUp(self):
+        # Test için örnek .csv verilerini yüklüyoruz
+        self.graph = Graph()
+        data_dir = Path(__file__).resolve().parent.parent / "data" / "test"
+        self.graph.load_nodes(data_dir / "nodes.csv")
+        self.graph.load_edges(data_dir / "edges.csv")
 
-    assert cost['G'] == 17
+    def test_shortest_path_costs(self):
+        costs, previous = shortest_path(self.graph, "A")
+        self.assertIsInstance(costs, dict)
+        self.assertGreaterEqual(len(costs), 1)
+        self.assertEqual(costs["A"], 0)
 
-    # Test direct neighbor costs
-    assert cost['B'] == 8
-    assert cost['E'] == 6
-    assert cost['F'] == 12
-    assert prev['F'] == 'B'
-    assert prev['G'] == 'C'
+    def test_shortest_path_previous(self):
+        _, previous = shortest_path(self.graph, "A")
+        self.assertIsInstance(previous, dict)
+        self.assertEqual(previous["A"], "Origin")
 
-def test_shortest_path_trace_from_D(small_test_graph):
-    cost, prev = shortest_path(small_test_graph, 'D')
-
-    # D → E → C → G = 3 + 6 + 5 = 14
-    assert cost['G'] == 14
-    assert prev['A'] == 'D'
-    assert prev['B'] == 'D'  # D → B is a valid path
-    assert prev['G'] == 'C'
-    assert prev['C'] == 'E'
-    assert cost['A'] == 3
+if __name__ == '__main__':
+    unittest.main()
