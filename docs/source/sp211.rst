@@ -1,0 +1,37 @@
+sp211 package
+=============
+
+Submodules
+----------
+
+sp211.dijkstra module
+---------------------
+
+.. automodule:: sp211.dijkstra
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+sp211.graph module
+------------------
+
+.. automodule:: sp211.graph
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+sp211.new\_feature module
+-------------------------
+
+.. automodule:: sp211.new_feature
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: sp211
+   :members:
+   :show-inheritance:
+   :undoc-members:
