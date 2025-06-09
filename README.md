@@ -104,3 +104,35 @@ Throughout this project;
 
 ---
 
+## PHASE 2
+
+🧪 Unit Testing
+I migrated test structure to use the unittest framework. Separate test files were created for each new function:
+- test_newfeature_totaldistance.py
+- test_newfeature_fuelcost.py
+
+All tests are located in the tests/ directory and run automatically via CI upon each push or pull request.
+
+⚙️ CI Integration (GitHub Actions)
+I integrated a CI pipeline using GitHub Actions that includes:
+- Dependency installation (including geopandas, pytest, twine, etc.)
+- Automatic test execution using unittest
+- Package building with build
+
+⚠️ Automatic TestPyPI upload was skipped since I cannot store API tokens as secrets in GitHub Classroom repositories. Even after cloning to a public repository, the integration was unsuccessful.
+
+📚 Documentation on Read the Docs
+This project is now also documented with Sphinx and hosted on Read the Docs.
+
+The docs/ folder includes all reStructuredText source files.
+
+The documentation is automatically built and published on push using .readthedocs.yaml.
+
+![Readthedocs Screenshot](img/readthe.png)
+
+# Use of AI
+Throughout the development of Phase 2, AI was used to:
+- Guide test structure migration to unittest
+- Help debug CI pipeline failures
+- Suggest fixes for Read the Docs integration issues
+
